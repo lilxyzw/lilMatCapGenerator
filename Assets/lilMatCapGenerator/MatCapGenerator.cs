@@ -22,6 +22,8 @@ namespace lilMatCapGenerator
         private static readonly string[] TEXT_MATCAP = new[] {"MatCap", "マットキャップ"};
         private static readonly string[] TEXT_CUBEMAP = new[] {"CubeMap", "キューブマップ"};
         private static readonly string[] TEXT_COLOR = new[] {"Color", "色"};
+        private static readonly string[] TEXT_NORMALMAP = new[] {"Normal Map", "ノーマルマップ"};
+        private static readonly string[] TEXT_REFLECTANCE = new[] {"Reflectance", "反射率"};
         private static readonly string[] TEXT_DIRECTION = new[] {"Direction", "方向"};
         private static readonly string[] TEXT_SMOOTHNESS = new[] {"Smoothness", "Smoothness"};
         private static readonly string[] TEXT_CC_SMOOTHNESS = new[] {"Smoothness (Clear Coat)", "Smoothness (クリアコート)"};
@@ -188,6 +190,14 @@ namespace lilMatCapGenerator
 
             EditorGUILayout.LabelField(TEXT_MATERIAL_SETTINGS[lang], EditorStyles.boldLabel);
             EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+            MaterialProperty _Color = FindProperty("_Color", props, false);
+            MaterialProperty _NormalMap = FindProperty("_NormalMap", props, false);
+            MaterialProperty _NormalScale = FindProperty("_NormalScale", props, false);
+            MaterialProperty _Reflectance = FindProperty("_Reflectance", props, false);
+            if(_Color != null) materialEditor.ShaderProperty(_Color, TEXT_COLOR[lang]);
+            if(_Reflectance != null) materialEditor.ShaderProperty(_Reflectance, TEXT_REFLECTANCE[lang]);
+            if(_NormalMap != null && _NormalScale != null) materialEditor.TexturePropertySingleLine(new GUIContent(TEXT_NORMALMAP[lang]), _NormalMap, _NormalScale);
+            EditorGUILayout.Space();
             _reorderableList.DoLayoutList();
 
             if(GUILayout.Button(TEXT_APPLY[lang]))
