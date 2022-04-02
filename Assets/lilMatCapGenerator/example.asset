@@ -1,0 +1,1113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!48 &-654925236252007494
+Shader:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_ParsedForm:
+    m_PropInfo:
+      m_Props:
+      - m_Name: _Color
+        m_Description: Color
+        m_Attributes: []
+        m_Type: 0
+        m_Flags: 0
+        m_DefValue[0]: 0
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 1
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _NormalMap
+        m_Description: Normal Map
+        m_Attributes: []
+        m_Type: 4
+        m_Flags: 0
+        m_DefValue[0]: 0
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: bump
+          m_TexDim: 2
+      - m_Name: _NormalScale
+        m_Description: Scale
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 1
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _Reflectance
+        m_Description: Reflectance
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0.25
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _IsOutput
+        m_Description: IsOutput
+        m_Attributes:
+        - Toggle(IS_OUTPUT_MODE)
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 0
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _LC0
+        m_Description: 
+        m_Attributes: []
+        m_Type: 0
+        m_Flags: 0
+        m_DefValue[0]: 1
+        m_DefValue[1]: 1
+        m_DefValue[2]: 1
+        m_DefValue[3]: 1
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _LP0
+        m_Description: 
+        m_Attributes: []
+        m_Type: 1
+        m_Flags: 0
+        m_DefValue[0]: -0.75
+        m_DefValue[1]: 1.5
+        m_DefValue[2]: 0.5
+        m_DefValue[3]: 1
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _Smoothness0
+        m_Description: 
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0.7
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _SmoothnessCC0
+        m_Description: 
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0.9
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _CCStrength0
+        m_Description: 
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 0.25
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _BlendMode0
+        m_Description: 
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 10
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _LC1
+        m_Description: 
+        m_Attributes: []
+        m_Type: 0
+        m_Flags: 0
+        m_DefValue[0]: 1
+        m_DefValue[1]: 1
+        m_DefValue[2]: 1
+        m_DefValue[3]: 1
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _LP1
+        m_Description: 
+        m_Attributes: []
+        m_Type: 1
+        m_Flags: 0
+        m_DefValue[0]: -0.75
+        m_DefValue[1]: 1.5
+        m_DefValue[2]: 0.5
+        m_DefValue[3]: 1
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _Smoothness1
+        m_Description: 
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0.7
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _SmoothnessCC1
+        m_Description: 
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0.9
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _CCStrength1
+        m_Description: 
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 0.25
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _BlendMode1
+        m_Description: 
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 10
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _LC2
+        m_Description: 
+        m_Attributes: []
+        m_Type: 0
+        m_Flags: 0
+        m_DefValue[0]: 1
+        m_DefValue[1]: 1
+        m_DefValue[2]: 1
+        m_DefValue[3]: 1
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _LP2
+        m_Description: 
+        m_Attributes: []
+        m_Type: 1
+        m_Flags: 0
+        m_DefValue[0]: -0.75
+        m_DefValue[1]: 1.5
+        m_DefValue[2]: 0.5
+        m_DefValue[3]: 1
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _Smoothness2
+        m_Description: 
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0.7
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _SmoothnessCC2
+        m_Description: 
+        m_Attributes: []
+        m_Type: 3
+        m_Flags: 0
+        m_DefValue[0]: 0.9
+        m_DefValue[1]: 0
+        m_DefValue[2]: 1
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _CCStrength2
+        m_Description: 
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 0.25
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+      - m_Name: _BlendMode2
+        m_Description: 
+        m_Attributes: []
+        m_Type: 2
+        m_Flags: 0
+        m_DefValue[0]: 10
+        m_DefValue[1]: 0
+        m_DefValue[2]: 0
+        m_DefValue[3]: 0
+        m_DefTexture:
+          m_DefaultName: 
+          m_TexDim: 1
+    m_SubShaders:
+    - m_Passes:
+      - m_NameIndices: {}
+        m_Type: 0
+        m_State:
+          serializedVersion: 2
+          m_Name: 
+          rtBlend0:
+            srcBlend:
+              val: 1
+              name: <noninit>
+            destBlend:
+              val: 0
+              name: <noninit>
+            srcBlendAlpha:
+              val: 1
+              name: <noninit>
+            destBlendAlpha:
+              val: 0
+              name: <noninit>
+            blendOp:
+              val: 0
+              name: <noninit>
+            blendOpAlpha:
+              val: 0
+              name: <noninit>
+            colMask:
+              val: 15
+              name: <noninit>
+          rtBlend1:
+            srcBlend:
+              val: 1
+              name: <noninit>
+            destBlend:
+              val: 0
+              name: <noninit>
+            srcBlendAlpha:
+              val: 1
+              name: <noninit>
+            destBlendAlpha:
+              val: 0
+              name: <noninit>
+            blendOp:
+              val: 0
+              name: <noninit>
+            blendOpAlpha:
+              val: 0
+              name: <noninit>
+            colMask:
+              val: 15
+              name: <noninit>
+          rtBlend2:
+            srcBlend:
+              val: 1
+              name: <noninit>
+            destBlend:
+              val: 0
+              name: <noninit>
+            srcBlendAlpha:
+              val: 1
+              name: <noninit>
+            destBlendAlpha:
+              val: 0
+              name: <noninit>
+            blendOp:
+              val: 0
+              name: <noninit>
+            blendOpAlpha:
+              val: 0
+              name: <noninit>
+            colMask:
+              val: 15
+              name: <noninit>
+          rtBlend3:
+            srcBlend:
+              val: 1
+              name: <noninit>
+            destBlend:
+              val: 0
+              name: <noninit>
+            srcBlendAlpha:
+              val: 1
+              name: <noninit>
+            destBlendAlpha:
+              val: 0
+              name: <noninit>
+            blendOp:
+              val: 0
+              name: <noninit>
+            blendOpAlpha:
+              val: 0
+              name: <noninit>
+            colMask:
+              val: 15
+              name: <noninit>
+          rtBlend4:
+            srcBlend:
+              val: 1
+              name: <noninit>
+            destBlend:
+              val: 0
+              name: <noninit>
+            srcBlendAlpha:
+              val: 1
+              name: <noninit>
+            destBlendAlpha:
+              val: 0
+              name: <noninit>
+            blendOp:
+              val: 0
+              name: <noninit>
+            blendOpAlpha:
+              val: 0
+              name: <noninit>
+            colMask:
+              val: 15
+              name: <noninit>
+          rtBlend5:
+            srcBlend:
+              val: 1
+              name: <noninit>
+            destBlend:
+              val: 0
+              name: <noninit>
+            srcBlendAlpha:
+              val: 1
+              name: <noninit>
+            destBlendAlpha:
+              val: 0
+              name: <noninit>
+            blendOp:
+              val: 0
+              name: <noninit>
+            blendOpAlpha:
+              val: 0
+              name: <noninit>
+            colMask:
+              val: 15
+              name: <noninit>
+          rtBlend6:
+            srcBlend:
+              val: 1
+              name: <noninit>
+            destBlend:
+              val: 0
+              name: <noninit>
+            srcBlendAlpha:
+              val: 1
+              name: <noninit>
+            destBlendAlpha:
+              val: 0
+              name: <noninit>
+            blendOp:
+              val: 0
+              name: <noninit>
+            blendOpAlpha:
+              val: 0
+              name: <noninit>
+            colMask:
+              val: 15
+              name: <noninit>
+          rtBlend7:
+            srcBlend:
+              val: 1
+              name: <noninit>
+            destBlend:
+              val: 0
+              name: <noninit>
+            srcBlendAlpha:
+              val: 1
+              name: <noninit>
+            destBlendAlpha:
+              val: 0
+              name: <noninit>
+            blendOp:
+              val: 0
+              name: <noninit>
+            blendOpAlpha:
+              val: 0
+              name: <noninit>
+            colMask:
+              val: 15
+              name: <noninit>
+          rtSeparateBlend: 0
+          zClip:
+            val: 1
+            name: <noninit>
+          zTest:
+            val: 4
+            name: <noninit>
+          zWrite:
+            val: 1
+            name: <noninit>
+          culling:
+            val: 2
+            name: <noninit>
+          offsetFactor:
+            val: 0
+            name: <noninit>
+          offsetUnits:
+            val: 0
+            name: <noninit>
+          alphaToMask:
+            val: 0
+            name: <noninit>
+          stencilOp:
+            pass:
+              val: 0
+              name: <noninit>
+            fail:
+              val: 0
+              name: <noninit>
+            zFail:
+              val: 0
+              name: <noninit>
+            comp:
+              val: 8
+              name: <noninit>
+          stencilOpFront:
+            pass:
+              val: 0
+              name: <noninit>
+            fail:
+              val: 0
+              name: <noninit>
+            zFail:
+              val: 0
+              name: <noninit>
+            comp:
+              val: 8
+              name: <noninit>
+          stencilOpBack:
+            pass:
+              val: 0
+              name: <noninit>
+            fail:
+              val: 0
+              name: <noninit>
+            zFail:
+              val: 0
+              name: <noninit>
+            comp:
+              val: 8
+              name: <noninit>
+          stencilReadMask:
+            val: 255
+            name: <noninit>
+          stencilWriteMask:
+            val: 255
+            name: <noninit>
+          stencilRef:
+            val: 0
+            name: <noninit>
+          fogStart:
+            val: 0
+            name: unity_FogStart
+          fogEnd:
+            val: 0
+            name: unity_FogEnd
+          fogDensity:
+            val: 0
+            name: unity_FogDensity
+          fogColor:
+            x:
+              val: 0
+              name: <noninit>
+            y:
+              val: 0
+              name: <noninit>
+            z:
+              val: 0
+              name: <noninit>
+            w:
+              val: 0
+              name: <noninit>
+            name: unity_FogColor
+          fogMode: -1
+          gpuProgramID: 4538
+          m_Tags:
+            tags:
+              RenderType: Opaque
+          m_LOD: 0
+          lighting: 0
+        m_ProgramMask: 6
+        progVertex:
+          m_SubPrograms: []
+        progFragment:
+          m_SubPrograms: []
+        progGeometry:
+          m_SubPrograms: []
+        progHull:
+          m_SubPrograms: []
+        progDomain:
+          m_SubPrograms: []
+        progRayTracing:
+          m_SubPrograms: []
+        m_HasInstancingVariant: 0
+        m_HasProceduralInstancingVariant: 0
+        m_UseName: 
+        m_Name: 
+        m_TextureName: 
+        m_Tags:
+          tags: {}
+      m_Tags:
+        tags:
+          RenderType: Opaque
+      m_LOD: 0
+    m_Name: Hidden/Assets/lilMatCapGenerator/example.asset
+    m_CustomEditorName: lilMatCapGenerator.MCGShaderGUI
+    m_FallbackName: 
+    m_Dependencies: []
+    m_DisableNoSubshadersMessage: 0
+  platforms: 
+  offsets: []
+  compressedLengths: []
+  decompressedLengths: []
+  compressedBlob: 
+  m_Dependencies: []
+  m_NonModifiableTextures: {}
+  m_ShaderIsBaked: 0
+  m_DefaultTextures: {}
+  m_CompileInfo:
+    m_Snippets:
+      4538:
+        serializedVersion: 3
+        m_Code: "#line 34 \"\"\n#ifdef DUMMY_PREPROCESSOR_TO_WORK_AROUND_HLSL_COMPILER_LINE_HANDLING\n#endif\n\n#include
+          \"HLSLSupport.cginc\"\n#define UNITY_INSTANCED_LOD_FADE\n#define UNITY_INSTANCED_SH\n#define
+          UNITY_INSTANCED_LIGHTMAPSTS\n#include \"UnityShaderVariables.cginc\"\n#include
+          \"UnityShaderUtilities.cginc\"\n#line 34 \"\"\n#ifdef DUMMY_PREPROCESSOR_TO_WORK_AROUND_HLSL_COMPILER_LINE_HANDLING\n#endif\n/*
+          UNITY: Original start of shader */\r\n            #pragma target 3.5\r\n           
+          #pragma vertex vert\r\n            #pragma fragment frag\r\n           
+          #pragma shader_feature_local _ IS_OUTPUT_MODE\r\n\r\n            #include
+          \"UnityCG.cginc\"\r\n            #include \"Lighting.cginc\"\r\n\r\n           
+          #define SPECULAR_LAYER_PROPS(n) \\\r\n                float4 _LC##n; \\\r\n               
+          float4 _LP##n; \\\r\n                float _Smoothness##n; \\\r\n               
+          float _SmoothnessCC##n; \\\r\n                float _CCStrength##n; \\\r\n               
+          uint _BlendMode##n;\r\n\r\n            #define SPECULAR_LAYER(n) \\\r\n               
+          float roughness##n = (1.0 - _Smoothness##n) * (1.0 - _Smoothness##n); \\\r\n               
+          float roughnessCC##n = (1.0 - _SmoothnessCC##n) * (1.0 - _SmoothnessCC##n);
+          \\\r\n                float3 L##n = normalize(_LP##n.xyz); \\\r\n               
+          float3 H##n = normalize(-V+L##n); \\\r\n                float NdotH##n
+          = saturate(dot(N,H##n)); \\\r\n                float3 col##n = (pow(NdotH##n,
+          1.0/roughness##n) + pow(NdotH##n, 1.0/roughnessCC##n) * _CCStrength##n)
+          * _LC##n.rgb; \\\r\n                col.rgb = BlendColor(col.rgb, col##n,
+          1.0, _BlendMode##n);\r\n\r\n            #define MATCAP_LAYER_PROPS(n) \\\r\n               
+          sampler2D _MatCap##n; \\\r\n                float4 _MatCapColor##n; \\\r\n               
+          uint _BlendMode##n;\r\n\r\n            #define MATCAP_LAYER(n) \\\r\n               
+          float4 col##n = tex2D(_MatCap##n, N.xy * 0.5 + 0.5) * _MatCapColor##n;
+          \\\r\n                col.rgb = BlendColor(col.rgb, col##n.rgb, col##n.a,
+          _BlendMode##n);\r\n\r\n            #define CUBE_LAYER_PROPS(n) \\\r\n               
+          samplerCUBE _CubeMap##n; \\\r\n                float4 _CubeMapColor##n;
+          \\\r\n                float4 _CubeMapRotation##n; \\\r\n               
+          float _Smoothness##n; \\\r\n                uint _BlendMode##n;\r\n\r\n           
+          #define CUBE_LAYER(n) \\\r\n                float roughness##n = (1.0 -
+          _Smoothness##n) * (1.0 - _Smoothness##n); \\\r\n                float3
+          R##n = RotateVector(R, _CubeMapRotation##n.rgb / 180.0 * UNITY_PI); \\\r\n               
+          float3 col##n = texCUBElod(_CubeMap##n, float4(R##n, roughness##n * 10)).rgb
+          * _CubeMapColor##n.rgb; \\\r\n                col.rgb = BlendColor(col.rgb,
+          col##n, 1.0, _BlendMode##n);\r\n\r\n            #define TONECORRECTION_LAYER_PROPS(n)
+          \\\r\n                float4 _HSVG##n; \\\r\n                float _ClampMin##n;
+          \\\r\n                float _ClampMax##n;\r\n\r\n            #define TONECORRECTION_LAYER(n)
+          \\\r\n                col.rgb = clamp(col.rgb, _ClampMin##n, _ClampMax##n);
+          \\\r\n                col.rgb = ToneCorrection(col.rgb, _HSVG##n);\r\n\r\n           
+          sampler2D _NormalMap;\r\n            float4 _NormalMap_ST;\r\n           
+          float4 _Color;\r\n            float _Reflectance;\r\n            float
+          _NormalScale;\r\n\r\n            SPECULAR_LAYER_PROPS(0)\r\n           
+          SPECULAR_LAYER_PROPS(1)\r\n            SPECULAR_LAYER_PROPS(2)\r\n\r\n           
+          //------------------------------------------------------------------------------------------------------------------------------\r\n           
+          // Color\r\n            float Median(float r, float g, float b)\r\n           
+          {\r\n                return max(min(r, g), min(max(r, g), b));\r\n           
+          }\r\n\r\n            float Median(float3 c)  { return Median(c.r, c.g,
+          c.b); }\r\n            float Minimum(float3 c) { return min(min(c.r, c.g),
+          c.b); }\r\n            float Maximum(float3 c) { return max(max(c.r, c.g),
+          c.b); }\r\n            float RGBtoL(float3 c)  { return dot(c, float3(0.3,
+          0.59, 0.11)); }\r\n            float RGBtoS(float3 c)  { return Maximum(c)
+          - Minimum(c); }\r\n\r\n            float3 ClipColor(float3 c)\r\n           
+          {\r\n                float L = RGBtoL(c);\r\n                float n =
+          Minimum(c);\r\n                float x = Maximum(c);\r\n               
+          if(n < 0) c = L + (((c - L) * L) / (L - n));\r\n                if(x >
+          1) c = L + (((c - L) * (1 - L)) / (x - L));\r\n                return c;\r\n           
+          }\r\n\r\n            float3 SetL(float3 c, float l)\r\n            {\r\n               
+          c = c + l - RGBtoL(c);\r\n                return ClipColor(c);\r\n           
+          }\r\n\r\n            float3 SetS(float3 c, float s)\r\n            {\r\n               
+          float cmax = Maximum(c);\r\n                float cmin = Minimum(c);\r\n               
+          float cmid = Median(c);\r\n                bool RisMax = cmax == c.r;\r\n               
+          bool RisMin = cmin == c.r;\r\n                bool GisMax = cmax == c.g;\r\n               
+          bool GisMin = cmin == c.g;\r\n                bool BisMax = cmax == c.b;\r\n               
+          bool BisMin = cmin == c.b;\r\n                if(cmax > cmin)\r\n               
+          {\r\n                    cmid = (((cmid - cmin) * s) / (cmax - cmin));\r\n                   
+          cmax = s;\r\n                }\r\n                else\r\n               
+          {\r\n                    cmid = 0;\r\n                    cmax = 0;\r\n               
+          }\r\n                cmin = 0;\r\n\r\n                c.r = RisMax ? cmax
+          : RisMin ? cmin : cmid;\r\n                c.g = GisMax ? cmax : GisMin
+          ? cmin : cmid;\r\n                c.b = BisMax ? cmax : BisMin ? cmin :
+          cmid;\r\n\r\n                return c;\r\n            }\r\n\r\n           
+          half3 BlendColor(half3 dst, half3 src, half3 srcA, uint blendMode)\r\n           
+          {\r\n                half3 ad = dst + src;\r\n                half3 mu
+          = dst * src;\r\n                half3 sc = ad - mu;\r\n               
+          half3 srcPM = src * srcA;\r\n                half3 burn =\r\n                   
+          dst == 1 ? 1 :\r\n                    src == 0 ? 0 :\r\n                   
+          1.0 - (1.0 - dst) / src;\r\n                half3 dodge =\r\n                   
+          dst == 0 ? 0 :\r\n                    src == 1 ? 1 :\r\n                   
+          dst / (1.0 - src);\r\n                half dsum = dst.r + dst.g + dst.b;\r\n               
+          half ssum = src.r + src.g + src.b;\r\n                float dS = RGBtoS(dst);\r\n               
+          float dL = RGBtoL(dst);\r\n                float sS = RGBtoS(src);\r\n               
+          float sL = RGBtoL(src);\r\n                half3 outCol;\r\n               
+          if(blendMode ==  0) outCol = src;                       // \u901A\u5E38\r\n\r\n               
+          if(blendMode ==  1) outCol = min(dst, src);             // \u6BD4\u8F03(\u6697)\r\n               
+          if(blendMode ==  2) outCol = mu;                        // \u4E57\u7B97\r\n               
+          if(blendMode ==  3) outCol = burn;                      // \u713C\u304D\u8FBC\u307F\u30AB\u30E9\u30FC\r\n               
+          if(blendMode ==  4) outCol = ad - 1.0;                  // \u713C\u304D\u8FBC\u307F(\u30EA\u30CB\u30A2)\r\n               
+          if(blendMode ==  5) outCol = dsum > ssum ? src : dst;   // \u30AB\u30E9\u30FC\u6BD4\u8F03(\u6697)\r\n\r\n               
+          if(blendMode ==  6) outCol = max(dst, src);                                    
+          // \u6BD4\u8F03(\u660E)\r\n                if(blendMode ==  7) outCol =
+          sc;                                                // \u30B9\u30AF\u30EA\u30FC\u30F3\r\n               
+          if(blendMode ==  8) outCol = dodge;                                            
+          // \u8986\u3044\u713C\u304D\u30AB\u30E9\u30FC\r\n                if(blendMode
+          ==  9){outCol = srcPM == 1 ? 1 : dst / (1.0 - srcPM); srcA = 1.0;} // \u8986\u3044\u713C\u304D(\u767A\u5149)\r\n               
+          if(blendMode == 10) outCol = ad;                                               
+          // \u52A0\u7B97 / \u8986\u3044\u713C\u304D(\u30EA\u30CB\u30A2)\r\n               
+          if(blendMode == 11){outCol = dst + srcPM; srcA = 1.0;}                         
+          // \u52A0\u7B97(\u767A\u5149)\r\n                if(blendMode == 12) outCol
+          = dsum > ssum ? dst : src;                           // \u30AB\u30E9\u30FC\u6BD4\u8F03(\u660E)\r\n\r\n               
+          if(blendMode == 13) outCol = dst > 0.5 ? sc * 2.0 - 1.0 : mu * 2.0;                                            
+          // \u30AA\u30FC\u30D0\u30FC\u30EC\u30A4\r\n                if(blendMode
+          == 14) outCol = src > 0.5 ? 2.0 * (dst - mu + sqrt(dst) * (src - 0.5))
+          : (sc * 2.0 - dst) * dst;   // \u30BD\u30D5\u30C8\u30E9\u30A4\u30C8 (Photoshop)\r\n               
+          if(blendMode == 15) outCol = (1.0 - dst) * 2.0 * mu + dst * dst;                                               
+          // \u30BD\u30D5\u30C8\u30E9\u30A4\u30C8 (Pegtop)\r\n                if(blendMode
+          == 16) outCol = src > 0.5 ? sc * 2.0 - 1.0 : mu * 2.0;                                            
+          // \u30CF\u30FC\u30C9\u30E9\u30A4\u30C8\r\n                if(blendMode
+          == 17) outCol = src > 0.5 ? dodge * 2.0 : burn * 2.0 - 1.0;                                       
+          // \u30D3\u30D3\u30C3\u30C9\u30E9\u30A4\u30C8\r\n                if(blendMode
+          == 18) outCol = dst + 2.0 * src - 1.0;                                                            
+          // \u30EA\u30CB\u30A2\u30E9\u30A4\u30C8\r\n                if(blendMode
+          == 19) outCol = src > 0.5 ? max(dst, 2.0 * src - 1.0) : min(dst, 2.0 *
+          src);                       // \u30D4\u30F3\u30E9\u30A4\u30C8\r\n               
+          if(blendMode == 20) outCol = float3(dst.r + src.r > 1.0, dst.g + src.g
+          > 1.0, dst.b + src.b > 1.0);             // \u30CF\u30FC\u30C9\u30DF\u30C3\u30AF\u30B9\r\n\r\n               
+          if(blendMode == 21) outCol = abs(dst - src);            // \u5DEE\u306E\u7D76\u5BFE\u5024\r\n               
+          if(blendMode == 22) outCol = ad - mu * 2.0;             // \u9664\u5916\r\n               
+          if(blendMode == 23) outCol = dst - src;                 // \u6E1B\u7B97\r\n               
+          if(blendMode == 24) outCol = src == 0 ? 1 : dst / src;  // \u9664\u7B97\r\n\r\n               
+          if(blendMode == 25) outCol = SetL(SetS(src, dS), dL);   // \u8272\u76F8\r\n               
+          if(blendMode == 26) outCol = SetL(SetS(dst, sS), dL);   // \u5F69\u5EA6\r\n               
+          if(blendMode == 27) outCol = SetL(src, dL);             // \u30AB\u30E9\u30FC\r\n               
+          if(blendMode == 28) outCol = SetL(dst, sL);             // \u8F1D\u5EA6\r\n\r\n               
+          outCol = max(0.0, outCol);\r\n                return lerp(dst, outCol,
+          srcA);\r\n            }\r\n\r\n            float3 ToneCorrection(float3
+          c, float4 hsvg)\r\n            {\r\n                // gamma\r\n               
+          c = pow(abs(c), hsvg.w);\r\n                // rgb -> hsv\r\n               
+          float4 p = (c.b > c.g) ? float4(c.bg,-1.0,2.0/3.0) : float4(c.gb,0.0,-1.0/3.0);\r\n               
+          float4 q = (p.x > c.r) ? float4(p.xyw, c.r) : float4(c.r, p.yzx);\r\n               
+          float d = q.x - min(q.w, q.y);\r\n                float e = 1.0e-10;\r\n               
+          float3 hsv = float3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x +
+          e), q.x);\r\n                // shift\r\n                hsv = float3(hsv.x+hsvg.x,saturate(hsv.y*hsvg.y),saturate(hsv.z*hsvg.z));\r\n               
+          // hsv -> rgb\r\n                return hsv.z - hsv.z * hsv.y + hsv.z *
+          hsv.y * saturate(abs(frac(hsv.x + float3(1.0, 2.0/3.0, 1.0/3.0)) * 6.0
+          - 3.0) - 1.0);\r\n            }\r\n\r\n            //------------------------------------------------------------------------------------------------------------------------------\r\n           
+          // Rotation\r\n            float3x3 GetRotMatrix(float3 rot)\r\n           
+          {\r\n                float sinx,cosx;\r\n                float siny,cosy;\r\n               
+          float sinz,cosz;\r\n                sincos(rot.x,sinx,cosx);\r\n               
+          sincos(rot.y,siny,cosy);\r\n                sincos(rot.z,sinz,cosz);\r\n               
+          return float3x3(\r\n                    cosy * cosz,    sinx * siny * cosz
+          - cosx * sinz,   cosx * siny * cosz + sinx * sinz,\r\n                   
+          cosy * sinz,    sinx * siny * sinz + cosx * cosz,   cosx * siny * sinz
+          - sinx * cosz,\r\n                    -siny,          sinx * cosy,                       
+          cosx * cosy\r\n                );\r\n            }\r\n\r\n            float3
+          RotateVector(float3 V, float3 rot)\r\n            {\r\n               
+          return mul(GetRotMatrix(rot), V);\r\n            }\r\n\r\n            struct
+          appdata\r\n            {\r\n                float4 vertex : POSITION;\r\n               
+          float2 uv : TEXCOORD0;\r\n                #if !defined(IS_OUTPUT_MODE)\r\n                   
+          float3 normal : NORMAL;\r\n                    float4 tangent : TANGENT;\r\n               
+          #endif\r\n                UNITY_VERTEX_INPUT_INSTANCE_ID\r\n           
+          };\r\n\r\n            struct v2f\r\n            {\r\n                float4
+          vertex       : SV_POSITION;\r\n                float2 uv           : TEXCOORD0;\r\n               
+          #if !defined(IS_OUTPUT_MODE)\r\n                    float3 normal      
+          : TEXCOORD1;\r\n                    float3 tangent      : TEXCOORD2;\r\n                   
+          float3 bitangent    : TEXCOORD3;\r\n                    float4 positionWS  
+          : TEXCOORD4;\r\n                #endif\r\n                UNITY_VERTEX_INPUT_INSTANCE_ID\r\n               
+          UNITY_VERTEX_OUTPUT_STEREO\r\n            };\r\n\r\n            v2f vert
+          (appdata v)\r\n            {\r\n                v2f o;\r\n\r\n               
+          UNITY_SETUP_INSTANCE_ID(v);\r\n                UNITY_TRANSFER_INSTANCE_ID(v,
+          o);\r\n                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);\r\n\r\n               
+          o.vertex = UnityObjectToClipPos(v.vertex);\r\n                o.uv = TRANSFORM_TEX(v.uv,
+          _NormalMap);\r\n                #if !defined(IS_OUTPUT_MODE)\r\n                   
+          o.normal = UnityObjectToWorldNormal(v.normal);\r\n                    o.tangent
+          = UnityObjectToWorldDir(v.tangent.xyz);\r\n                    o.bitangent
+          = normalize(cross(o.normal, o.tangent) * v.tangent.w);\r\n                   
+          o.positionWS = mul(unity_ObjectToWorld, float4(v.vertex.xyz, 1.0));\r\n               
+          #endif\r\n\r\n                return o;\r\n            }\r\n\r\n           
+          float4 frag (v2f i) : SV_Target\r\n            {\r\n                UNITY_SETUP_INSTANCE_ID(i);\r\n               
+          UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);\r\n\r\n                float3
+          V = float3(0,0,-1); //normalize(i.positionWS - _WorldSpaceCameraPos.xyz);\r\n               
+          float3 N;\r\n                #if defined(IS_OUTPUT_MODE)\r\n                   
+          N.xy = i.uv.xy * 2.0 - 1.0;\r\n                    N.z = saturate(1.0 -
+          N.x * N.x - N.y * N.y);\r\n                    N.z = N.z == 0.0 ? 0.0 :
+          sqrt(N.z);\r\n                    N = normalize(N);\r\n               
+          #else\r\n                    float4 normalMap = tex2D(_NormalMap, i.uv);\r\n                   
+          float3 normalTS = UnpackScaleNormal(normalMap, _NormalScale);\r\n                   
+          float3x3 TBN = float3x3(i.tangent, i.bitangent, i.normal);\r\n                   
+          N = mul(normalTS, TBN);\r\n                    N = normalize(mul((float3x3)UNITY_MATRIX_V,
+          N));\r\n                #endif\r\n                N.x = -N.x;\r\n               
+          float3 R = reflect(V,N);\r\n                float NdotV = dot(N,V);\r\n               
+          float4 col = float4(0,0,0,1);\r\n\r\n                SPECULAR_LAYER(0)\r\n               
+          SPECULAR_LAYER(1)\r\n                SPECULAR_LAYER(2)\r\n\r\n               
+          col.rgb *= lerp(_Reflectance, 1.0, pow(saturate(1.0+NdotV), 5.0));\r\n\r\n               
+          #if defined(UNITY_COLORSPACE_GAMMA)\r\n                    col.rgb += GammaToLinearSpace(_Color.rgb);\r\n                   
+          col.rgb = LinearToGammaSpace(col.rgb);\r\n                #else\r\n                   
+          col += _Color;\r\n                #endif\r\n                return col;\r\n           
+          }\r\n            "
+        m_AssetPath: 
+        m_PlatformMask: 4294967295
+        m_HardwareTierVariantsMask: 0
+        m_StartLine: 36
+        m_TypesMask: 3
+        m_IncludesHash:
+          serializedVersion: 2
+          Hash: 43bdaff3ec1a83eba5be4c05a2bf4e4a
+        m_CodeHash:
+          serializedVersion: 2
+          Hash: db970dbbc1e0fbe4af2048aa7935aab3
+        m_FromOther: 0
+        m_ForceSyncCompilation: 0
+        m_Language: 0
+        m_VariantsUserGlobal0: []
+        m_VariantsUserGlobal1: []
+        m_VariantsUserGlobal2: []
+        m_VariantsUserGlobal3: []
+        m_VariantsUserGlobal4: []
+        m_VariantsUserGlobal5: []
+        m_VariantsUserGlobal6: []
+        m_VariantsUserLocal0:
+        - - _
+          - IS_OUTPUT_MODE
+        m_VariantsUserLocal1:
+        - - _
+          - IS_OUTPUT_MODE
+        m_VariantsUserLocal2: []
+        m_VariantsUserLocal3: []
+        m_VariantsUserLocal4: []
+        m_VariantsUserLocal5: []
+        m_VariantsUserLocal6: []
+        m_VariantsBuiltin0: []
+        m_VariantsBuiltin1: []
+        m_VariantsBuiltin2: []
+        m_VariantsBuiltin3: []
+        m_VariantsBuiltin4: []
+        m_VariantsBuiltin5: []
+        m_VariantsBuiltin6: []
+        m_BaseRequirements: 4075
+        m_KeywordTargetInfo:
+        - keywordName: SHADOWS_SOFT
+          requirements: 227
+        - keywordName: DIRLIGHTMAP_COMBINED
+          requirements: 227
+        - keywordName: DIRLIGHTMAP_SEPARATE
+          requirements: 227
+        - keywordName: DYNAMICLIGHTMAP_ON
+          requirements: 227
+        - keywordName: SHADOWS_SCREEN
+          requirements: 227
+        - keywordName: INSTANCING_ON
+          requirements: 2048
+        - keywordName: PROCEDURAL_INSTANCING_ON
+          requirements: 16384
+        - keywordName: STEREO_MULTIVIEW_ON
+          requirements: 4075
+        - keywordName: STEREO_INSTANCING_ON
+          requirements: 4075
+        m_NonStrippedUserKeywords: 
+        m_BuiltinKeywords: 
+    m_MeshComponentsFromSnippets: 23
+    m_HasSurfaceShaders: 0
+    m_HasFixedFunctionShaders: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952237b253e534b4281db34aed7621d1, type: 3}
+  m_Name: mat
+  m_EditorClassIdentifier: 
+  m_Layers: 000000000000000000000000
+  m_shaderText: "Shader \"Hidden/Assets/lilMatCapGenerator/example.asset\"\r\n{\r\n   
+    Properties\r\n    {\r\n        _Color (\"Color\", Color) = (0,0,0,1)\r\n       
+    _NormalMap (\"Normal Map\", 2D) = \"bump\" {}\r\n        _NormalScale (\"Scale\",
+    Float) = 1\r\n        _Reflectance (\"Reflectance\", Range(0,1)) = 0.25\r\n       
+    [Toggle(IS_OUTPUT_MODE)] _IsOutput (\"IsOutput\", Int) = 0\r\n\r\n        _LC0
+    (\"\", Color) = (1,1,1,1)\r\n        _LP0 (\"\", Vector) = (-0.75,1.5,0.5,1.0)\r\n       
+    _Smoothness0 (\"\", Range(0,1)) = 0.7\r\n        _SmoothnessCC0 (\"\", Range(0,1))
+    = 0.9\r\n        _CCStrength0 (\"\", Float) = 0.25\r\n        _BlendMode0 (\"\",
+    Int) = 10\r\n        _LC1 (\"\", Color) = (1,1,1,1)\r\n        _LP1 (\"\", Vector)
+    = (-0.75,1.5,0.5,1.0)\r\n        _Smoothness1 (\"\", Range(0,1)) = 0.7\r\n       
+    _SmoothnessCC1 (\"\", Range(0,1)) = 0.9\r\n        _CCStrength1 (\"\", Float)
+    = 0.25\r\n        _BlendMode1 (\"\", Int) = 10\r\n        _LC2 (\"\", Color)
+    = (1,1,1,1)\r\n        _LP2 (\"\", Vector) = (-0.75,1.5,0.5,1.0)\r\n        _Smoothness2
+    (\"\", Range(0,1)) = 0.7\r\n        _SmoothnessCC2 (\"\", Range(0,1)) = 0.9\r\n       
+    _CCStrength2 (\"\", Float) = 0.25\r\n        _BlendMode2 (\"\", Int) = 10\r\n   
+    }\r\n    SubShader\r\n    {\r\n        Tags { \"RenderType\"=\"Opaque\" }\r\n\r\n       
+    Pass\r\n        {\r\n            CGPROGRAM\r\n            #pragma target 3.5\r\n           
+    #pragma vertex vert\r\n            #pragma fragment frag\r\n            #pragma
+    shader_feature_local _ IS_OUTPUT_MODE\r\n\r\n            #include \"UnityCG.cginc\"\r\n           
+    #include \"Lighting.cginc\"\r\n\r\n            #define SPECULAR_LAYER_PROPS(n)
+    \\\r\n                float4 _LC##n; \\\r\n                float4 _LP##n; \\\r\n               
+    float _Smoothness##n; \\\r\n                float _SmoothnessCC##n; \\\r\n               
+    float _CCStrength##n; \\\r\n                uint _BlendMode##n;\r\n\r\n           
+    #define SPECULAR_LAYER(n) \\\r\n                float roughness##n = (1.0 - _Smoothness##n)
+    * (1.0 - _Smoothness##n); \\\r\n                float roughnessCC##n = (1.0 -
+    _SmoothnessCC##n) * (1.0 - _SmoothnessCC##n); \\\r\n                float3 L##n
+    = normalize(_LP##n.xyz); \\\r\n                float3 H##n = normalize(-V+L##n);
+    \\\r\n                float NdotH##n = saturate(dot(N,H##n)); \\\r\n               
+    float3 col##n = (pow(NdotH##n, 1.0/roughness##n) + pow(NdotH##n, 1.0/roughnessCC##n)
+    * _CCStrength##n) * _LC##n.rgb; \\\r\n                col.rgb = BlendColor(col.rgb,
+    col##n, 1.0, _BlendMode##n);\r\n\r\n            #define MATCAP_LAYER_PROPS(n)
+    \\\r\n                sampler2D _MatCap##n; \\\r\n                float4 _MatCapColor##n;
+    \\\r\n                uint _BlendMode##n;\r\n\r\n            #define MATCAP_LAYER(n)
+    \\\r\n                float4 col##n = tex2D(_MatCap##n, N.xy * 0.5 + 0.5) * _MatCapColor##n;
+    \\\r\n                col.rgb = BlendColor(col.rgb, col##n.rgb, col##n.a, _BlendMode##n);\r\n\r\n           
+    #define CUBE_LAYER_PROPS(n) \\\r\n                samplerCUBE _CubeMap##n; \\\r\n               
+    float4 _CubeMapColor##n; \\\r\n                float4 _CubeMapRotation##n; \\\r\n               
+    float _Smoothness##n; \\\r\n                uint _BlendMode##n;\r\n\r\n           
+    #define CUBE_LAYER(n) \\\r\n                float roughness##n = (1.0 - _Smoothness##n)
+    * (1.0 - _Smoothness##n); \\\r\n                float3 R##n = RotateVector(R,
+    _CubeMapRotation##n.rgb / 180.0 * UNITY_PI); \\\r\n                float3 col##n
+    = texCUBElod(_CubeMap##n, float4(R##n, roughness##n * 10)).rgb * _CubeMapColor##n.rgb;
+    \\\r\n                col.rgb = BlendColor(col.rgb, col##n, 1.0, _BlendMode##n);\r\n\r\n           
+    #define TONECORRECTION_LAYER_PROPS(n) \\\r\n                float4 _HSVG##n;
+    \\\r\n                float _ClampMin##n; \\\r\n                float _ClampMax##n;\r\n\r\n           
+    #define TONECORRECTION_LAYER(n) \\\r\n                col.rgb = clamp(col.rgb,
+    _ClampMin##n, _ClampMax##n); \\\r\n                col.rgb = ToneCorrection(col.rgb,
+    _HSVG##n);\r\n\r\n            sampler2D _NormalMap;\r\n            float4 _NormalMap_ST;\r\n           
+    float4 _Color;\r\n            float _Reflectance;\r\n            float _NormalScale;\r\n\r\n           
+    SPECULAR_LAYER_PROPS(0)\r\n            SPECULAR_LAYER_PROPS(1)\r\n           
+    SPECULAR_LAYER_PROPS(2)\r\n\r\n            //------------------------------------------------------------------------------------------------------------------------------\r\n           
+    // Color\r\n            float Median(float r, float g, float b)\r\n           
+    {\r\n                return max(min(r, g), min(max(r, g), b));\r\n           
+    }\r\n\r\n            float Median(float3 c)  { return Median(c.r, c.g, c.b);
+    }\r\n            float Minimum(float3 c) { return min(min(c.r, c.g), c.b); }\r\n           
+    float Maximum(float3 c) { return max(max(c.r, c.g), c.b); }\r\n            float
+    RGBtoL(float3 c)  { return dot(c, float3(0.3, 0.59, 0.11)); }\r\n           
+    float RGBtoS(float3 c)  { return Maximum(c) - Minimum(c); }\r\n\r\n           
+    float3 ClipColor(float3 c)\r\n            {\r\n                float L = RGBtoL(c);\r\n               
+    float n = Minimum(c);\r\n                float x = Maximum(c);\r\n               
+    if(n < 0) c = L + (((c - L) * L) / (L - n));\r\n                if(x > 1) c =
+    L + (((c - L) * (1 - L)) / (x - L));\r\n                return c;\r\n           
+    }\r\n\r\n            float3 SetL(float3 c, float l)\r\n            {\r\n               
+    c = c + l - RGBtoL(c);\r\n                return ClipColor(c);\r\n           
+    }\r\n\r\n            float3 SetS(float3 c, float s)\r\n            {\r\n               
+    float cmax = Maximum(c);\r\n                float cmin = Minimum(c);\r\n               
+    float cmid = Median(c);\r\n                bool RisMax = cmax == c.r;\r\n               
+    bool RisMin = cmin == c.r;\r\n                bool GisMax = cmax == c.g;\r\n               
+    bool GisMin = cmin == c.g;\r\n                bool BisMax = cmax == c.b;\r\n               
+    bool BisMin = cmin == c.b;\r\n                if(cmax > cmin)\r\n               
+    {\r\n                    cmid = (((cmid - cmin) * s) / (cmax - cmin));\r\n                   
+    cmax = s;\r\n                }\r\n                else\r\n                {\r\n                   
+    cmid = 0;\r\n                    cmax = 0;\r\n                }\r\n               
+    cmin = 0;\r\n\r\n                c.r = RisMax ? cmax : RisMin ? cmin : cmid;\r\n               
+    c.g = GisMax ? cmax : GisMin ? cmin : cmid;\r\n                c.b = BisMax ?
+    cmax : BisMin ? cmin : cmid;\r\n\r\n                return c;\r\n           
+    }\r\n\r\n            half3 BlendColor(half3 dst, half3 src, half3 srcA, uint
+    blendMode)\r\n            {\r\n                half3 ad = dst + src;\r\n               
+    half3 mu = dst * src;\r\n                half3 sc = ad - mu;\r\n               
+    half3 srcPM = src * srcA;\r\n                half3 burn =\r\n                   
+    dst == 1 ? 1 :\r\n                    src == 0 ? 0 :\r\n                    1.0
+    - (1.0 - dst) / src;\r\n                half3 dodge =\r\n                   
+    dst == 0 ? 0 :\r\n                    src == 1 ? 1 :\r\n                    dst
+    / (1.0 - src);\r\n                half dsum = dst.r + dst.g + dst.b;\r\n               
+    half ssum = src.r + src.g + src.b;\r\n                float dS = RGBtoS(dst);\r\n               
+    float dL = RGBtoL(dst);\r\n                float sS = RGBtoS(src);\r\n               
+    float sL = RGBtoL(src);\r\n                half3 outCol;\r\n                if(blendMode
+    ==  0) outCol = src;                       // \u901A\u5E38\r\n\r\n               
+    if(blendMode ==  1) outCol = min(dst, src);             // \u6BD4\u8F03(\u6697)\r\n               
+    if(blendMode ==  2) outCol = mu;                        // \u4E57\u7B97\r\n               
+    if(blendMode ==  3) outCol = burn;                      // \u713C\u304D\u8FBC\u307F\u30AB\u30E9\u30FC\r\n               
+    if(blendMode ==  4) outCol = ad - 1.0;                  // \u713C\u304D\u8FBC\u307F(\u30EA\u30CB\u30A2)\r\n               
+    if(blendMode ==  5) outCol = dsum > ssum ? src : dst;   // \u30AB\u30E9\u30FC\u6BD4\u8F03(\u6697)\r\n\r\n               
+    if(blendMode ==  6) outCol = max(dst, src);                                    
+    // \u6BD4\u8F03(\u660E)\r\n                if(blendMode ==  7) outCol = sc;                                               
+    // \u30B9\u30AF\u30EA\u30FC\u30F3\r\n                if(blendMode ==  8) outCol
+    = dodge;                                             // \u8986\u3044\u713C\u304D\u30AB\u30E9\u30FC\r\n               
+    if(blendMode ==  9){outCol = srcPM == 1 ? 1 : dst / (1.0 - srcPM); srcA = 1.0;}
+    // \u8986\u3044\u713C\u304D(\u767A\u5149)\r\n                if(blendMode ==
+    10) outCol = ad;                                                // \u52A0\u7B97
+    / \u8986\u3044\u713C\u304D(\u30EA\u30CB\u30A2)\r\n                if(blendMode
+    == 11){outCol = dst + srcPM; srcA = 1.0;}                          // \u52A0\u7B97(\u767A\u5149)\r\n               
+    if(blendMode == 12) outCol = dsum > ssum ? dst : src;                          
+    // \u30AB\u30E9\u30FC\u6BD4\u8F03(\u660E)\r\n\r\n                if(blendMode
+    == 13) outCol = dst > 0.5 ? sc * 2.0 - 1.0 : mu * 2.0;                                            
+    // \u30AA\u30FC\u30D0\u30FC\u30EC\u30A4\r\n                if(blendMode == 14)
+    outCol = src > 0.5 ? 2.0 * (dst - mu + sqrt(dst) * (src - 0.5)) : (sc * 2.0 -
+    dst) * dst;   // \u30BD\u30D5\u30C8\u30E9\u30A4\u30C8 (Photoshop)\r\n               
+    if(blendMode == 15) outCol = (1.0 - dst) * 2.0 * mu + dst * dst;                                               
+    // \u30BD\u30D5\u30C8\u30E9\u30A4\u30C8 (Pegtop)\r\n                if(blendMode
+    == 16) outCol = src > 0.5 ? sc * 2.0 - 1.0 : mu * 2.0;                                            
+    // \u30CF\u30FC\u30C9\u30E9\u30A4\u30C8\r\n                if(blendMode == 17)
+    outCol = src > 0.5 ? dodge * 2.0 : burn * 2.0 - 1.0;                                       
+    // \u30D3\u30D3\u30C3\u30C9\u30E9\u30A4\u30C8\r\n                if(blendMode
+    == 18) outCol = dst + 2.0 * src - 1.0;                                                            
+    // \u30EA\u30CB\u30A2\u30E9\u30A4\u30C8\r\n                if(blendMode == 19)
+    outCol = src > 0.5 ? max(dst, 2.0 * src - 1.0) : min(dst, 2.0 * src);                      
+    // \u30D4\u30F3\u30E9\u30A4\u30C8\r\n                if(blendMode == 20) outCol
+    = float3(dst.r + src.r > 1.0, dst.g + src.g > 1.0, dst.b + src.b > 1.0);            
+    // \u30CF\u30FC\u30C9\u30DF\u30C3\u30AF\u30B9\r\n\r\n                if(blendMode
+    == 21) outCol = abs(dst - src);            // \u5DEE\u306E\u7D76\u5BFE\u5024\r\n               
+    if(blendMode == 22) outCol = ad - mu * 2.0;             // \u9664\u5916\r\n               
+    if(blendMode == 23) outCol = dst - src;                 // \u6E1B\u7B97\r\n               
+    if(blendMode == 24) outCol = src == 0 ? 1 : dst / src;  // \u9664\u7B97\r\n\r\n               
+    if(blendMode == 25) outCol = SetL(SetS(src, dS), dL);   // \u8272\u76F8\r\n               
+    if(blendMode == 26) outCol = SetL(SetS(dst, sS), dL);   // \u5F69\u5EA6\r\n               
+    if(blendMode == 27) outCol = SetL(src, dL);             // \u30AB\u30E9\u30FC\r\n               
+    if(blendMode == 28) outCol = SetL(dst, sL);             // \u8F1D\u5EA6\r\n\r\n               
+    outCol = max(0.0, outCol);\r\n                return lerp(dst, outCol, srcA);\r\n           
+    }\r\n\r\n            float3 ToneCorrection(float3 c, float4 hsvg)\r\n           
+    {\r\n                // gamma\r\n                c = pow(abs(c), hsvg.w);\r\n               
+    // rgb -> hsv\r\n                float4 p = (c.b > c.g) ? float4(c.bg,-1.0,2.0/3.0)
+    : float4(c.gb,0.0,-1.0/3.0);\r\n                float4 q = (p.x > c.r) ? float4(p.xyw,
+    c.r) : float4(c.r, p.yzx);\r\n                float d = q.x - min(q.w, q.y);\r\n               
+    float e = 1.0e-10;\r\n                float3 hsv = float3(abs(q.z + (q.w - q.y)
+    / (6.0 * d + e)), d / (q.x + e), q.x);\r\n                // shift\r\n               
+    hsv = float3(hsv.x+hsvg.x,saturate(hsv.y*hsvg.y),saturate(hsv.z*hsvg.z));\r\n               
+    // hsv -> rgb\r\n                return hsv.z - hsv.z * hsv.y + hsv.z * hsv.y
+    * saturate(abs(frac(hsv.x + float3(1.0, 2.0/3.0, 1.0/3.0)) * 6.0 - 3.0) - 1.0);\r\n           
+    }\r\n\r\n            //------------------------------------------------------------------------------------------------------------------------------\r\n           
+    // Rotation\r\n            float3x3 GetRotMatrix(float3 rot)\r\n            {\r\n               
+    float sinx,cosx;\r\n                float siny,cosy;\r\n                float
+    sinz,cosz;\r\n                sincos(rot.x,sinx,cosx);\r\n                sincos(rot.y,siny,cosy);\r\n               
+    sincos(rot.z,sinz,cosz);\r\n                return float3x3(\r\n                   
+    cosy * cosz,    sinx * siny * cosz - cosx * sinz,   cosx * siny * cosz + sinx
+    * sinz,\r\n                    cosy * sinz,    sinx * siny * sinz + cosx * cosz,  
+    cosx * siny * sinz - sinx * cosz,\r\n                    -siny,          sinx
+    * cosy,                        cosx * cosy\r\n                );\r\n           
+    }\r\n\r\n            float3 RotateVector(float3 V, float3 rot)\r\n           
+    {\r\n                return mul(GetRotMatrix(rot), V);\r\n            }\r\n\r\n           
+    struct appdata\r\n            {\r\n                float4 vertex : POSITION;\r\n               
+    float2 uv : TEXCOORD0;\r\n                #if !defined(IS_OUTPUT_MODE)\r\n                   
+    float3 normal : NORMAL;\r\n                    float4 tangent : TANGENT;\r\n               
+    #endif\r\n                UNITY_VERTEX_INPUT_INSTANCE_ID\r\n            };\r\n\r\n           
+    struct v2f\r\n            {\r\n                float4 vertex       : SV_POSITION;\r\n               
+    float2 uv           : TEXCOORD0;\r\n                #if !defined(IS_OUTPUT_MODE)\r\n                   
+    float3 normal       : TEXCOORD1;\r\n                    float3 tangent      :
+    TEXCOORD2;\r\n                    float3 bitangent    : TEXCOORD3;\r\n                   
+    float4 positionWS   : TEXCOORD4;\r\n                #endif\r\n               
+    UNITY_VERTEX_INPUT_INSTANCE_ID\r\n                UNITY_VERTEX_OUTPUT_STEREO\r\n           
+    };\r\n\r\n            v2f vert (appdata v)\r\n            {\r\n               
+    v2f o;\r\n\r\n                UNITY_SETUP_INSTANCE_ID(v);\r\n               
+    UNITY_TRANSFER_INSTANCE_ID(v, o);\r\n                UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);\r\n\r\n               
+    o.vertex = UnityObjectToClipPos(v.vertex);\r\n                o.uv = TRANSFORM_TEX(v.uv,
+    _NormalMap);\r\n                #if !defined(IS_OUTPUT_MODE)\r\n                   
+    o.normal = UnityObjectToWorldNormal(v.normal);\r\n                    o.tangent
+    = UnityObjectToWorldDir(v.tangent.xyz);\r\n                    o.bitangent =
+    normalize(cross(o.normal, o.tangent) * v.tangent.w);\r\n                    o.positionWS
+    = mul(unity_ObjectToWorld, float4(v.vertex.xyz, 1.0));\r\n                #endif\r\n\r\n               
+    return o;\r\n            }\r\n\r\n            float4 frag (v2f i) : SV_Target\r\n           
+    {\r\n                UNITY_SETUP_INSTANCE_ID(i);\r\n                UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);\r\n\r\n               
+    float3 V = float3(0,0,-1); //normalize(i.positionWS - _WorldSpaceCameraPos.xyz);\r\n               
+    float3 N;\r\n                #if defined(IS_OUTPUT_MODE)\r\n                   
+    N.xy = i.uv.xy * 2.0 - 1.0;\r\n                    N.z = saturate(1.0 - N.x *
+    N.x - N.y * N.y);\r\n                    N.z = N.z == 0.0 ? 0.0 : sqrt(N.z);\r\n                   
+    N = normalize(N);\r\n                #else\r\n                    float4 normalMap
+    = tex2D(_NormalMap, i.uv);\r\n                    float3 normalTS = UnpackScaleNormal(normalMap,
+    _NormalScale);\r\n                    float3x3 TBN = float3x3(i.tangent, i.bitangent,
+    i.normal);\r\n                    N = mul(normalTS, TBN);\r\n                   
+    N = normalize(mul((float3x3)UNITY_MATRIX_V, N));\r\n                #endif\r\n               
+    N.x = -N.x;\r\n                float3 R = reflect(V,N);\r\n                float
+    NdotV = dot(N,V);\r\n                float4 col = float4(0,0,0,1);\r\n\r\n               
+    SPECULAR_LAYER(0)\r\n                SPECULAR_LAYER(1)\r\n                SPECULAR_LAYER(2)\r\n\r\n               
+    col.rgb *= lerp(_Reflectance, 1.0, pow(saturate(1.0+NdotV), 5.0));\r\n\r\n               
+    #if defined(UNITY_COLORSPACE_GAMMA)\r\n                    col.rgb += GammaToLinearSpace(_Color.rgb);\r\n                   
+    col.rgb = LinearToGammaSpace(col.rgb);\r\n                #else\r\n                   
+    col += _Color;\r\n                #endif\r\n                return col;\r\n           
+    }\r\n            ENDCG\r\n        }\r\n    }\r\n\r\n    CustomEditor \"lilMatCapGenerator.MCGShaderGUI\"\r\n}\r\n"
+--- !u!21 &2353706993505894254
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: example
+  m_Shader: {fileID: -654925236252007494}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BlendMode0: 10
+    - _BlendMode1: 10
+    - _BlendMode2: 10
+    - _CCStrength0: 0.25
+    - _CCStrength1: 0.25
+    - _CCStrength2: 0
+    - _IsOutput: 0
+    - _NormalScale: 1
+    - _Reflectance: 0.25
+    - _Smoothness0: 0.7
+    - _Smoothness1: 0.65
+    - _Smoothness2: 0.1
+    - _SmoothnessCC0: 0.9
+    - _SmoothnessCC1: 0.9
+    - _SmoothnessCC2: 0.9
+    m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _LC0: {r: 0.7348991, g: 0.72828406, b: 0.9245283, a: 1}
+    - _LC1: {r: 0.8252585, g: 0.70692414, b: 0.8867924, a: 1}
+    - _LC2: {r: 0.5377358, g: 0.37793696, b: 0.37793696, a: 1}
+    - _LP0: {r: -0.75, g: 1.5, b: 0.5, a: 1}
+    - _LP1: {r: 0.5, g: 0.25, b: -1, a: 1}
+    - _LP2: {r: 0, g: -1, b: -0.5, a: 1}
