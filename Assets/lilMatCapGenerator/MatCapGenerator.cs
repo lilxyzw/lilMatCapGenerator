@@ -96,6 +96,10 @@ namespace lilMatCapGenerator
         };
         private static readonly string[] TEXT_CLAMP_MIN = new[] {"Clamp Min", "色の下限"};
         private static readonly string[] TEXT_CLAMP_MAX = new[] {"Clamp Max", "色の上限"};
+        private static readonly string[] TEXT_HUE = new[] {"Hue", "色相"};
+        private static readonly string[] TEXT_SATURATION = new[] {"Saturation", "彩度"};
+        private static readonly string[] TEXT_VALUE = new[] {"Value", "明度"};
+        private static readonly string[] TEXT_GAMMA = new[] {"Gamma", "ガンマ"};
 
         private static readonly string[] TEXT_MATERIAL_SETTINGS = new[] {"Material Settings", "マテリアル設定"};
         private static readonly string[] TEXT_EXPORT_SETTINGS = new[] {"Export Settings", "書き出し設定"};
@@ -285,12 +289,23 @@ namespace lilMatCapGenerator
 
         private static void DrawHSVGProperty(Rect rect, Material material, string propname)
         {
-            Vector4 val;
-            if(material.HasProperty(propname))  val = material.GetVector(propname);
-            else val = new Vector4(0,0,0,1);
+            Vector4 hsvg;
+            if(material.HasProperty(propname))  hsvg = material.GetVector(propname);
+            else hsvg = new Vector4(0,1,1,1);
+            float hue = hsvg.x;
+            float sat = hsvg.y;
+            float val = hsvg.z;
+            float gamma = hsvg.w;
+
             EditorGUI.BeginChangeCheck();
-            val = EditorGUI.Vector4Field(rect, "", val);
-            if(EditorGUI.EndChangeCheck()) material.SetVector(propname, val);
+            hue = EditorGUI.Slider(rect, TEXT_HUE[lang], hue, -0.5f, 0.5f);
+            rect.y += EditorGUIUtility.singleLineHeight + 2;
+            sat = EditorGUI.Slider(rect, TEXT_SATURATION[lang], sat, 0.0f, 2.0f);
+            rect.y += EditorGUIUtility.singleLineHeight + 2;
+            val = EditorGUI.Slider(rect, TEXT_VALUE[lang], val, 0.0f, 2.0f);
+            rect.y += EditorGUIUtility.singleLineHeight + 2;
+            gamma = EditorGUI.Slider(rect, TEXT_GAMMA[lang], gamma, 0.01f, 2.0f);
+            if(EditorGUI.EndChangeCheck()) material.SetVector(propname, new Vector4(hue, sat, val, gamma));
         }
 
         private static void DrawRangeProperty(Rect rect, Material material, string propname, string dispname, float min, float max)
