@@ -274,7 +274,7 @@ namespace lilMatCapGenerator
             if(material.HasProperty(propname))  val = material.GetVector(propname);
             else val = new Vector4(0,0,0,1);
             EditorGUI.BeginChangeCheck();
-            val = EditorGUI.Vector4Field(rect, dispname, val);
+            val = EditorGUI.Vector3Field(rect, dispname, val);
             if(EditorGUI.EndChangeCheck()) material.SetVector(propname, val);
         }
 
