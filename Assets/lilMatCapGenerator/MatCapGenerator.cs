@@ -385,6 +385,7 @@ namespace lilMatCapGenerator
             Object.DestroyImmediate(bakeMaterial);
             Object.DestroyImmediate(srcTexture);
             Object.DestroyImmediate(outTexture);
+            AssetDatabase.Refresh();
         }
     }
 }
